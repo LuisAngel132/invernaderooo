@@ -5,7 +5,8 @@ const Env = use('Env')
 
 /** @type {import('@adonisjs/ignitor/src/Helpers')} */
 const Helpers = use('Helpers')
-
+const URL = require("url-parse");
+const PROD_MYSQL_DB = new URL(Env.get("CLEARDB_DATABASE_URL"));
 module.exports = {
   /*
   |--------------------------------------------------------------------------
