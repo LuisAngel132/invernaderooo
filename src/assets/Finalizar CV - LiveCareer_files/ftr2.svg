@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="614" height="858" viewBox="0 0 614 860" style="margin:0 auto;___background:url(images/mtp1.png) no-repeat center top; _border:1px solid #ccc; background:#fff;">
+	<defs>
+		<style>
+			.h1{font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:22px; text fill:#000000; font-weight:bold; }
+			.p2 {font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:11px; fill:#333;}
+			.p3 {font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px; fill:#333; }
+			.p2b {ffont-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14px; font-weight:bold; fill:#333;}
+			.h2 {font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14px; fill:#333; font-weight:bold; }
+			.subheding {font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px; fill:#333; font-weight:bold; }
+			.li-disc {fill:#000000;}
+			.text-cap {text-transform:capitalize;}
+			.fontNormal{font-weight:normal;}
+			.fontBold{font-weight:bold;}
+			.duration{text-anchor:end;}
+			.address{font-size:14px;font-weight:400}
+
+			 
+		</style>
+	</defs>
+	  
+	<text x="247" y="75" class="h1  ">
+		<tspan x="40"   fill="#222">DANIEL </tspan> <tspan   fill="#222" class=" ">GARCÍA</tspan>
+	</text>
+	<line x1="40" y1="88" x2="610" y2="88" stroke="#222" stroke-width="2"/> 
+	<line x1="40" y1="99" x2="610" y2="99" stroke="#222" stroke-width="2"/>
+	<text x="612" y="120" class="address ffrc  duration  p2">
+	   <tspan x="" dy="0">12 de abril de 1987 (Madrid)  </tspan> 
+      <tspan x="612" dy="18">C/Gran Via,123, Bajo D</tspan>
+		<tspan x="610" dy="18">911-234-567 </tspan>
+		<tspan dx="3" dy="0"></tspan>
+		<tspan dx="4" dy="0"></tspan>
+	    <tspan dx="3" dy="0"> | </tspan>  
+		<tspan dx="4" dy="0" class="address-link">danimadrid@live.es </tspan> 
+	</text> 
+     	
+	 <!-- Experience Section-->
+		 <text x="40" y="210" class="h2">Experiencia</text>
+		 <line x1="40" y1="219" x2="610" y2="219" stroke="#222" stroke-width="1.5"/>  
+        <text x="40" y="240" class="subheding ">
+            <tspan x="40" dy="0" class="fontBold" > Gerente de distrito</tspan>		
+		    <tspan x="40" dy="18" class="fontNormal" >09/2009 - Actuel</tspan>
+			<tspan x="40" dy="18">Movistar -</tspan>
+			<tspan dx="2" dy="0" class="fontNormal">Madrid</tspan>
+		</text>
+		    
+          <circle cx="68" cy="300" r="2" class="li-disc"></circle>
+			<circle cx="68" cy="354" r="2" class="li-disc"></circle>
+			<circle cx="68" cy="391" r="2" class="li-disc"></circle>
+			<circle cx="68" cy="427" r="2" class="li-disc"></circle>
+            <circle cx="68" cy="444" r="2" class="li-disc"></circle>
+			<circle cx="68" cy="480" r="2" class="li-disc"></circle> 
+		 	 
+       <text x="183" y="305" class="p3">
+		<tspan x="80" dy="0">Dirigí las iniciativas de desarrollo de contratación/formación/empleados para aumentar al  </tspan>
+		<tspan x="80" dy="18"> máximola productividad y el potencial de los ingresos a través del desarrollo de un equipo  </tspan>
+        <tspan x="80" dy="18"> un equipo comercial. </tspan>
+		<tspan x="80" dy="18">Aumenté satisfactoriamente la retención de empleados mediante la creación de un entorno laboral   </tspan>
+		<tspan x="80" dy="18">positivo en 18 establecimientos.</tspan>
+		<tspan x="80" dy="18">Administré operaciones diarias para garantizar que el personal de ventas se adhiriera y comprendiera    </tspan>
+		<tspan x="80" dy="18"> las  políticas. </tspan>
+		<tspan x="80" dy="18">Establecí relaciones laborales sólidas con clientes para impulsar el desarrollo comercial.  </tspan>
+		<tspan x="80" dy="18">Planifiqué y ejecuté iniciativas de expositores promocionales en colaboración con el departamento     </tspan>
+		<tspan x="80" dy="18">de administración de promociones. </tspan>
+		<tspan x="80" dy="18">Me ocupé de que el establecimiento estuviera preparado para someterse a auditorías nternas mediante   	 </tspan>
+		<tspan x="80" dy="18">el ianálisis o la preparación de controles de calidad  y de estadísticas  de inventario.</tspan>
+         
+    </text>
+	 <!-- Exp Second Section -->
+	     <text x="40" y="535" class="p3">	
+		    <tspan x="40" dy="0" class="fontBold">Gerente de Operaciones</tspan>
+			<tspan x="40" dy="18" class="fontNormal">08/1997 - 09/2009 </tspan>
+          	 <tspan x="40" dy="18" class="fontBold">El Corte Inglés -</tspan>			 
+			<tspan dx="2" dy="0" class="duration fontNormal">Madrid</tspan>
+			 
+		</text>
+		 <circle cx="68" cy="591" r="2"  class="li-disc"></circle>			
+		<circle cx="68" cy="644" r="2" class="li-disc"></circle>			
+		<circle cx="68" cy="680" r="2" class="li-disc"></circle>  
+	  <text x="80" y="595" class="p3">
+		    <tspan x="80" dy="0">Supervisé las operaciones de apertura y de cierre de un establecimiento con ingresos anuales   </tspan>
+			<tspan x="80" dy="18"> de 4 millones de euros en cumplimiento con las políticas y procedimientos actuales de  </tspan>
+			<tspan x="80" dy="18"> la empresa.</tspan>
+			<tspan x="80" dy="18">Gestioné los costes operativos encabezando el control de inventario y liderando las actividades   </tspan>
+			<tspan x="80" dy="18">del departamento de envío además de fijar las nóminas. </tspan>
+			<tspan x="80" dy="18"> Administré los procesos financieros — incluidas las cuentas a pagar y las  cuentas por cobrar —    </tspan>
+			<tspan x="80" dy="18">mediante la gestión de una oficina de contabilidad y la actualización de los archivos del servicio  </tspan>
+			<tspan x="80" dy="18">  de atención al cliente.</tspan>
+		 </text>
+   <!-- Education Section-->
+	 
+	 <!--   <text x="40" y="755" class="h2">Educación</text>
+	  <line x1="40" y1="765" x2="610" y2="765" stroke="#222" stroke-width="1.5"/>  
+	     <text x="80" y="788" class="p3">	
+			<tspan x="80" dy="0" class="fontBold">Máster en Administración de Empresas (MBA): Administración</tspan>
+            <tspan dx="0" dy="0" class="fontNormal">2009</tspan>	
+            <tspan x="80" dy="18" class="fontBold">Universidad Complutense -</tspan>			 
+			 <tspan dx="2" dy="0" class="fontNormal">Madrid</tspan> 
+		</text>    
+	    <text x="80" y="814" class="p3">
+		<tspan x="80" dy="10">Cursos: Lenguaje y Comunicación, Sociología y Psicología</tspan> 	
+	 </text>	 -->
+   
+ 	
+</svg> 

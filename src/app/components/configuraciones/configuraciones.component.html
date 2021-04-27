@@ -1,0 +1,25 @@
+    <div class="" *ngFor="let configuracion of Configuraciones">
+      <ngb-carousel  >
+        <ng-template *ngFor="let config of configuracion.configuraciones" ngbSlide>
+          <div class="picsum-img-wrapper" style="  display: inline-block;
+          ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body " style=" text-align: center;">
+                <h5 class="card-title">Configuraciones</h5>
+                <p  class="card-text">{{configuracion.temperatura_ambiente}}</p>
+                <p  class="card-text">{{config.calenton}}</p>
+                <p class="card-text">{{config.temperatura}}</p>
+                <p class="card-text">{{config.hora_luz}}</p>
+                <p class="card-text">{{config.descripcion}}</p>
+
+              </div>
+            </div>
+
+          </div>
+
+        </ng-template>
+    </ngb-carousel>
+
+
+
+

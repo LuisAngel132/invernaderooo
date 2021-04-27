@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LOGIN</title>
+</head>
+
+<body>
+ <app-menu></app-menu>
+
+ <br>
+ <br>
+ <br>
+ 
+    <div class="login-wrap">
+      <div class="login-html">
+
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar Sesion</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Crear Cuenta</label>
+        <div class="login-form">
+
+          <div class="sign-in-htm">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="group">
+              <label for="user" class="label">Correo</label>
+              <input type="text" class="form-control btn-5 btn" placeholder="Ingrese su Correo" formControlName="email" [class.is-invalid]="validatecorreo">
+                <div *ngIf="validatecorreo">
+
+                </div>
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Contraseña</label>
+              <input type="password"  class="form-control btn btn-5" placeholder="Ingrese su Contraseña" formControlName="password"[class.is-invalid]="validatepassword">
+
+            </div>
+
+            <div class="group">
+              <input type="submit" class="button  btn btn-5" [disabled]="validatepassword"  value="Sign In">
+            </div>
+
+            </form>
+
+
+
+
+            <div class="hr"></div>
+
+          </div>
+          <div class="sign-up-htm">
+            <form [formGroup]="registerform" (ngSubmit)="register()">
+
+            <div class="group">
+              <label for="user" class="label">nombre</label>
+              <input type="text" class="form-control btn btn-5" formControlName ="nombre" [class.is-invalid]="validatenombre"  placeholder="Ingrese su Nombre">
+            </div>
+            <div class="group">
+              <label for="correo" class="label">correo</label>
+              <input type="text" class="form-control btn btn-5" formControlName ="email" [class.is-invalid]="validatecorreo2" placeholder="Ingrese su Correo">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Contraseña</label>
+              <input type="password" class="form-control btn btn-5" formControlName ="password" [class.is-invalid]="validatepassword"  placeholder="Ingrese su contraseña">
+            </div>
+            <div class="group">
+              <input type="submit" class="button  btn btn-5"  [disabled]="validatepassword" value="CREAR">
+            </div>
+            </form>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+              <label for="tab-1"><a>Ya tienes cuenta?</a>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </body>
+
+</html>
+
+
+
+
+
+
