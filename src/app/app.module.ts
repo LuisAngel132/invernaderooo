@@ -15,6 +15,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CheckloginGuard } from './guards/checklogin.guard';
 import { ConfiguracionesComponent } from './components/configuraciones/configuraciones.component';
+import { RegistrerComponent } from './components/auth/registrer/registrer.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'usuarios', component:UsuariosComponent,canActivate:[CheckloginGuard]},
   {path:'home',component:HomeComponent},
   {path:'configuraciones',component:ConfiguracionesComponent},
+  {path:'registrarse',component:RegistrerComponent},
 
   {path:'', redirectTo:'home',pathMatch:'full'}
   ]
@@ -34,7 +36,9 @@ const routes: Routes = [
 
     MenuComponent,
 
-    ConfiguracionesComponent
+    ConfiguracionesComponent,
+
+    RegistrerComponent
 
   ],
   imports: [
