@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="no"?>
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="614" height="980" viewBox="0 0 614 980" style="margin:0 auto; _background:url(img/cont1.png) no-repeat 0 0;">
+	<defs>
+		<style>
+			.h1{font-family:"Century Gothic"; text-transform:uppercase; font-size:36px; fill:#333; font-weight:bold; _fill:red}
+			.p2 {font-family:"Century Gothic"; font-size:10px; fill:#333; _fill:red}
+			.p3 {font-family:"Century Gothic"; font-size:11px; fill:#333; _fill:red}
+			.p2b {font-family:"Century Gothic"; font-size:14px; font-weight:bold; fill:#333; _fill:red}
+			.h2 {font-family:"Century Gothic"; text-transform:uppercase; font-size:12px; fill:#900; font-weight:bold; _fill:red}
+			.subheding {font-family:"Century Gothic"; font-size:11px; fill:#333; font-weight:bold; _fill:red}
+			.li-disc {fill:#000000; _fill:red}
+			.text-cap {text-transform:capitalize;}
+			.fontNormal{font-weight:normal;}
+			.line{stroke:#C33;___stroke:#090;}
+		</style>
+	</defs>
+	
+
+	<text x="41" y="70" class="h1">
+		<tspan dx="3" dy="0" fill="#900" class="fontNormal" >DANIEL</tspan>
+		<tspan dx="0" dy="0" fill="#900" >GARCÍA</tspan>
+	</text>
+	<line x1="40" y1="80" x2="571" y2="80" stroke-width="2" stroke="#900" />
+	
+	<text x="40" y="98" class="p2">
+		<tspan x="40" dy="0">12 de abril de 1987 (Madrid),C/Gran Via,123, Bajo D | 911 234 567  |</tspan>
+        <tspan dx="0" dy="0">danimadrid@live.es </tspan>
+	</text>
+
+   <!-- Experience Section-->
+	<text x="40" y="159" class="h2">Experiencia</text>
+	 <!-- Exp First Section -->
+	<text x="40" y="179" class="subheding">			
+		<tspan x="41" y=" ">09/2009 - Actuel</tspan>
+	</text>
+	<text x="157" y="179" class="subheding">Gerente de distrito</text>
+	<text x="40" y="200 " class="subheding">
+		<tspan dx="117" dy="0">Movistar</tspan>
+		<tspan dx="0" dy="0">-</tspan>
+		<tspan dx="8" dy="0" class="fontNormal">Madrid</tspan>
+	</text>
+    <circle cx="178" cy="220" r="2" class="li-disc"></circle>
+		<circle cx="178" cy="275" r="2" class="li-disc"></circle>  
+		<circle cx="178" cy="312" r="2" class="li-disc"></circle>
+		<circle cx="178" cy="348" r="2" class="li-disc"></circle>
+		<circle cx="178" cy="383" r="2" class="li-disc"></circle>
+		<circle cx="178" cy="420" r="2" class="li-disc"></circle> 
+			 
+ <text x="183" y="225" class="p3">
+		<tspan x="188" dy="0">Dirigí las iniciativas de desarrollo de contratación/formación/empleados  </tspan>
+		<tspan x="188" dy="18">para aumentar al máximola productividad y el potencial de los ingresos    </tspan>
+        <tspan x="188" dy="18">a través del desarrollo de un equipo comercial.</tspan>
+		<tspan x="188" dy="18">Aumenté satisfactoriamente la retención de empleados mediante la   </tspan>
+		<tspan x="188" dy="18">creación de un entorno laboral positivo en 18 establecimientos.</tspan>
+		<tspan x="188" dy="18">Administré operaciones diarias para garantizar que el personal de     </tspan>
+		<tspan x="188" dy="18">ventas se adhiriera y comprendiera las  políticas. </tspan>
+		<tspan x="188" dy="18">Establecí relaciones laborales sólidas con clientes para impulsar   </tspan>
+        <tspan x="188" dy="18">el desarrollo comercial.</tspan>
+		<tspan x="188" dy="18">Planifiqué y ejecuté iniciativas de expositores promocionales en  </tspan>
+		<tspan x="188" dy="18">colaboración con el departamento  de administración de promociones. </tspan>
+		<tspan x="188" dy="18">Me ocupé de que el establecimiento estuviera preparado para  </tspan>
+		<tspan x="188" dy="18">someterse a auditorías internas mediante  el análisis o la   </tspan>
+           <tspan x="188" dy="18">preparación de controles de calidad y de estadísticas de inventario.</tspan> 
+    </text>  
+		<!-- Exp First Section End -->
+		<!-- Exp Second Section -->
+		<text x="152" y="490" class="p3">	
+			<tspan x="42" dy="0" class="subheding">08/1997 - 09/2009</tspan>
+			<tspan x="157" dy="0" class="subheding">Gerente de Operaciones</tspan>
+		</text>
+		<text x="156" y="505" class="subheding">
+		<tspan dx="0" dy="0" class="subheding">El Corte Inglés</tspan>
+		<tspan dx="0" dy="0"> - </tspan>
+		<tspan dx="02" dy="0" class="subheding fontNormal">Madrid</tspan>
+		</text>
+		  <circle cx="178" cy="524" r="2"  class="li-disc"></circle>
+		<circle cx="178" cy="578" r="2" class="li-disc"></circle>
+		<circle cx="178" cy="633" r="2" class="li-disc"></circle>    
+		 
+ <text x="188" y="528" class="p3">
+		     <tspan x="188" dy="0">Supervisé las operaciones de apertura y de cierre de un establecimiento </tspan>
+			<tspan x="188" dy="18">con ingresos anuales de 4 millones de euros en cumplimiento con las </tspan>
+              <tspan x="188" dy="18">políticas y procedimientos actuales de la empresa.</tspan>
+			<tspan x="188" dy="18">Gestioné los costes operativos encabezando el control de inventario y   </tspan>
+			<tspan x="188" dy="18">liderando las actividades del departamento de envío además de </tspan>
+            <tspan x="188" dy="18">fijar las nóminas.	</tspan>
+			<tspan x="188" dy="18"> Administré los procesos financieros — incluidas las cuentas a pagar y las  </tspan>
+			<tspan x="188" dy="18"> cuentas por cobrar —  mediante la gestión de una oficina de contabilidad   </tspan>
+             <tspan x="188" dy="18">y la actualización de los archivos del servicio de atención al cliente.</tspan> 
+		 </text>
+     <!-- Exp Second Section End -->
+  <!-- Education Section-->
+	  <text x="40" y="690">
+	<tspan x="40" dy="0" class="h2"> Educación</tspan>
+	<tspan x="157" dy="20" class="subheding">Máster en Administración de Empresas (MBA): Administración</tspan>	
+    <tspan x="41" dy="0" class="subheding">2009</tspan>		
+	<tspan x="157" dy="20" class="subheding">Universidad Complutense  –</tspan>
+	<tspan dx="2" dy="0" class="subheding fontNormal">Madrid</tspan>
+	</text>
+	 <text x="41" y="730" class="p3">
+		<tspan x="157" dy="18">Cursos: Lenguaje y Comunicación, Sociología y Psicología  </tspan>			
+		 
+	</text>	  	
+	
+	 
+	
+</svg>
