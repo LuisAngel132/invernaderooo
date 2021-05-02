@@ -5,6 +5,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { PlantasService } from 'src/app/services/plantas.service';
 import { Plantas } from 'src/app/models/plantas';
+import { ReportesService } from 'src/app/services/reportes.service';
+import { Reporte } from 'src/app/models/reporte';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { errorMessage, successDialog, timeMessage } from 'src/app/imagenes/functions/alerts';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -19,6 +21,7 @@ export class UsuariosComponent implements OnInit {
   public archivos : any =[]
   public previsualizacion :string
   plantas: Plantas[]
+  reporte: Reporte[]
   public id:string
   public botton:false
   planta:Plantas
@@ -31,7 +34,7 @@ menu :true
   nuevaplanta = new FormGroup({
     nombre: new FormControl(''),
  });
-  constructor(private Authservice3:PlantasService,private config:NgbCarouselConfig,private Authservice:AuthService,private sanitizer: DomSanitizer,private router:Router,private Authservice2:PlantasService) {
+  constructor(private Authservice3:PlantasService,private config:NgbCarouselConfig,private Authservice:AuthService,private reportesdelusuario:ReportesService,private sanitizer: DomSanitizer,private router:Router,private Authservice2:PlantasService) {
 this.config.interval =1500;
 
 }
@@ -40,7 +43,9 @@ this.config.interval =1500;
 
   this.Authservice.getAllusers().subscribe(data=>this.Usuarios = data
     )
-   this.ws =Ws("wss://invernanderointeligente.herokuapp.com");
+    this.reportesdelusuario.getreportes().subscribe(data=>this.reporte = data
+      )
+   this.ws =Ws("ws://invernanderointeligente.herokuapp.com");
    this.ws.connect()
    this.chat = this.ws.subscribe("chat")
    this.chat.on("message",(data:any)=>{

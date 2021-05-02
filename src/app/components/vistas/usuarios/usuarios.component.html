@@ -1,128 +1,34 @@
 <div class="row">
-  <div class="col-2" style="background-color:seagreen ;">
-    <div class="bloque1"><p style=" margin-left: 25px;  font-size: 30px;font-weight: 900;">Invernadero</p></div>
-    <div>
-      <input type="file" class="d-none " (change)="capturarfile($event)" #photoInput>
-    <div class="row">
+  <div class="col-12 col-lg-2 cont "style="background-color:seagreen ; max-height:"  >
+      <p style="  font-size: 30px;font-weight: 900;">Invernadero</p>
 
-      </div
-    ></div>
-        <div class="col-md-4" *ngFor="let user of Usuarios">
-          <div *ngIf="user.url_foto != undefined">
-
-  <!-- Button trigger modal -->
-  <input type="image" src = {{user.url_foto}} width="200px" height="200px"   data-toggle="modal" style="border-radius: 100%;" data-target="#exampleModal">
+      <div  *ngFor="let user of Usuarios">
+          <input class="" type="image"class="text-center" src = "assets/foto.jfif" width="150px" height="150px"   data-toggle="modal" style="border-radius: 100%;" data-target="#exampleModal">
 
 
-  <!-- Modal -->
-  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-       <h5 id="exampleModalLabel" style="text-align: justify;">Modificar imagen</h5>
-       <button class="close" data-dismiss="modal" arial-label="cerrar">
-        <span arial-hidden="true">&times;</span>
-        </button>
-    </div>
-  <div class="modal-body">
-     <div class="">
-       <img src = {{user.url_foto}} width="200px" height="200px" class="img-fluid" alt="No image"
-              >&nbsp;
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              &nbsp;
-
-              <img src="assets/cambio.png" width="200px" height="200px" alt="">
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              &nbsp;
-              &nbsp;
-
-    <img [src]="previsualizacion  || 'assets/foto.png'" width="150px" height="150px" style="border-radius: 100%;" alt="No image"
-    (click)="photoInput.click()">
-
-
-
-
-
-    </div>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-    <button type="button" class="btn btn-danger"  (click)="eliminarArchivo()" >Eliminar imagen</button>
-    <button type="button" class="btn btn-primary" (click)="subirArchivo()">Guardar imagen</button>
-  </div>
-
-  </div>
-   </div>
-  </div>
-
-
-
-
-
-
-
-
-            <!-- Modal -->
-
-          </div>
-          <div *ngIf="user.url_foto == undefined">
-
-            <input type="image" src = "assets/foto.png" width="200px" height="200px"   data-toggle="modal" style="border-radius: 100%;" data-target="#exampleModal">
-
-
-            <!-- Modal -->
-            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                 <h5 id="exampleModalLabel" style="text-align: center;">Insertar imagen</h5>
-                 <button class="close" data-dismiss="modal" arial-label="cerrar">
-                  <span arial-hidden="true">&times;</span>
-                  </button>
-              </div>
-            <div class="modal-body">
-               <div class="">
-               <img [src]="previsualizacion  || 'assets/foto.png'" width="200px" height="200px"  alt="No image"
-                        (click)="photoInput.click()">
-
-
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" (click)="subirArchivo()">Guardar imagen</button>
-            </div>
-
-            </div>
-             </div>
-          </div>
-
-  </div>
-
-    <p class="text-center"style=" margin-top:20px;   max-width: 100%; font-weight: 900; font-size: 20px; color: seashell; text-align: center;">{{user.nombre}}</p>
-    <button type="button" routerLink="/" (click)="cerrarsesion()" class="btn btn-dark">Cerrar sesion</button>
-
-  </div>
+          <p class=""style=" font-weight: 900; font-size: 20px; color: blackorange;">{{user.nombre}}</p>
+          <button type="button" routerLink="/" (click)="cerrarsesion()" class="btn btn-dark">Cerrar sesion</button>
       </div>
-<div class="offset-3 col-4" style=" margin-top:200px">
-  <div class="" >
-    <ngb-carousel  >
-      <ng-template *ngFor="" ngbSlide>
-        <div class="picsum-img-wrapper" style="  display: inline-block;
-        ">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body " style=" text-align: center;">
-              <h5 class="card-title">Configuraciones</h5>
-              <p  class="card-text"></p>
-              <p  class="card-text"></p>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
+  </div>
+  <div class="col-6 col-lg-4 offset-md-1">
+    <br><br><br><br>
 
+    <ngb-carousel  >
+      <ng-template *ngFor="let report of reporte" ngbSlide>
+        <div class="picsum-img-wrapper"
+        >
+          <div class="card">
+            <div class="card-body " style=" text-align: center;">
+              <h5 class="card-title">REPORTES</h5>
+              <hr>
+              <p  class="card-text">Sensor temperatura :{{report.Sensor_temperatura}}</p>
+              <hr>
+              <p  class="card-text">Sensor humedad :{{report.Sensor_humedad}}</p>
+              <hr>
+              <p  class="card-text">Frio :{{report.Frio}}</p>
+              <hr>
+              <p  class="card-text">Calor :{{report.Calor}}</p>
+<br>
             </div>
           </div>
 
@@ -130,47 +36,23 @@
 
       </ng-template>
   </ngb-carousel>
-</div></div>
-    <div class="col-3">
-<div class="container text-center">
-
-  <br><br>
-  <div class="card mx-auto">
-    <div class="card-body">
-
-      <ul class="list-group list-group-flush" style="overflow-y: scroll; height: 665px;">
-        <li class=" list-group-item" *ngFor="let mensaje of mensajes">
-          {{mensaje}}
-        </li>
-      </ul>
-      <div class="input-group-mb-3">
-
-
-          <div class="form-row">
-            <div class="col">
-              <input type="text" class="form-control input-lg "  placeholder="ee" style="border-radius: 15%;"  [(ngModel)]="msg">
-
-                   </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary" (click)="enviarMensaje()">EnviarMensaje</button>
-
-                </div>
-          </div>
-
-
-          </div>
-
-      </div>
-
   </div>
+  <div class="col-6 col-lg-4 offset-md-1">
+  <div class="container text-center">
+    <br><br><br><br>
+
+    <div class="card mx-auto">
+      <div class="card-body">
+        <ul class="list-group list-group-flush h-100" style="overflow-y: scroll; max-height:300px">
+          <li class=" list-group-item" *ngFor="let mensaje of mensajes">
+           REPORTE ACTUAL
+           <hr>
+           <br>
+            {{mensaje}}
+          </li>
+        </ul>
+
+
 </div>
-
-    </div>
- </div>
-
-
-
-
-
 
 
