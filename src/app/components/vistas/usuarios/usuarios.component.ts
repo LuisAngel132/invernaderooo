@@ -45,7 +45,7 @@ this.config.interval =1500;
     )
     this.reportesdelusuario.getreportes().subscribe(data=>this.reporte = data
       )
-   this.ws =Ws("wss://invernanderointeligente.herokuapp.com");
+   this.ws =Ws("wss://invernanderointeligente.herokuapp.com/adonis-ws");
    this.ws.connect()
    this.chat = this.ws.subscribe("chat")
    this.chat.on("message",(data:any)=>{
