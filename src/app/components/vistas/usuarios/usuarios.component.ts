@@ -7,6 +7,8 @@ import { PlantasService } from 'src/app/services/plantas.service';
 import { Plantas } from 'src/app/models/plantas';
 import { ReportesService } from 'src/app/services/reportes.service';
 import { Reporte } from 'src/app/models/reporte';
+import { Indentificador } from 'src/app/models/Indentificador';
+
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { errorMessage, successDialog, timeMessage } from 'src/app/imagenes/functions/alerts';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -22,6 +24,7 @@ export class UsuariosComponent implements OnInit {
   public previsualizacion :string
   plantas: Plantas[]
   reporte: Reporte[]
+  indentificador:Indentificador[]
   public id:string
   public botton:false
   planta:Plantas
@@ -29,28 +32,31 @@ export class UsuariosComponent implements OnInit {
   chat:any
   mensajes:string[]=[]
   msg:string
-menu :true
+mostrar:Boolean =false
 
   nuevaplanta = new FormGroup({
     nombre: new FormControl(''),
  });
   constructor(private Authservice3:PlantasService,private config:NgbCarouselConfig,private Authservice:AuthService,private reportesdelusuario:ReportesService,private sanitizer: DomSanitizer,private router:Router,private Authservice2:PlantasService) {
 this.config.interval =1500;
-
 }
 
   ngOnInit(): void {
 
+
   this.Authservice.getAllusers().subscribe(data=>this.Usuarios = data
     )
+    this.reportesdelusuario.getid().subscribe(data=>this.indentificador = data
+      )
     this.reportesdelusuario.getreportes().subscribe(data=>this.reporte = data
       )
-   this.ws =Ws("wss://invernanderointeligente.herokuapp.com");
+   this.ws =Ws("ws://invernanderointeligente.herokuapp.com");
    this.ws.connect()
    this.chat = this.ws.subscribe("chat")
    this.chat.on("message",(data:any)=>{
      this.mensajes.push(data)
-   })
+    })
+console.log(this.indentificador)
   }
   enviarMensaje(){
 
@@ -140,5 +146,19 @@ guardarid2(id,button){
 
 cerrarsesion(){
   this.Authservice.logout()
+}
+mostrasocket(id:string,mensaje:string){
+
+  if( id == mensaje)
+  {
+return this.mostrar = true
+  }
+  return this.mostrar = false
+
+}
+nomostrasocket()
+{
+  return this.mostrar = false
+
 }
 }
