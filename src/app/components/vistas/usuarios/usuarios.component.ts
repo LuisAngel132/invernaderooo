@@ -7,7 +7,6 @@ import { PlantasService } from 'src/app/services/plantas.service';
 import { Plantas } from 'src/app/models/plantas';
 import { ReportesService } from 'src/app/services/reportes.service';
 import { Reporte } from 'src/app/models/reporte';
-import { Indentificador } from 'src/app/models/Indentificador';
 
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { errorMessage, successDialog, timeMessage } from 'src/app/imagenes/functions/alerts';
