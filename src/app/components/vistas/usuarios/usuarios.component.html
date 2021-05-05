@@ -37,22 +37,32 @@
       </ng-template>
   </ngb-carousel>
   </div>
+
+
   <div class="col-6 col-lg-4 offset-md-1">
   <div class="container text-center">
     <br><br><br><br>
 
     <div class="card mx-auto">
       <div class="card-body">
-        <ul class="list-group list-group-flush h-100" style="overflow-y: scroll; max-height:300px">
-          <li class=" list-group-item" *ngFor="let mensaje of mensajes">
-           REPORTE ACTUAL
-           <hr>
-           <br>
-            {{mensaje}}
-          </li>
-        </ul>
+        <div class="list-group " style="overflow-y: scroll; max-height:300px">
+          <div class=" " *ngFor="let mensaje of mensajes">
+
+<div  *ngFor="let user of Usuarios">
+  <div *ngIf=mostrar>
+    REPORTE ACTUAL
+    <hr>
+    <br>
+     {{mensaje}}
+
+    </div>
+  <div *ngIf=mostrasocket(user.id,mensaje)>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
 
 
 </div>
-
-
