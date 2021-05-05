@@ -3,6 +3,7 @@ import { tap } from 'rxjs/operators';
 import { Observable,BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Reporte } from '../models/reporte';
+import { Indentificador } from '../models/indentificador';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,7 @@ export class ReportesService {
   getreportes():Observable<Reporte[]>{
     return this.http.get<Reporte[]>(`${this.apiURL}reporte/`)
       }
-
+      getid():Observable<Indentificador[]>{
+        return this.http.get<Indentificador[]>(`${this.apiURL}user/`)
+          }
 }

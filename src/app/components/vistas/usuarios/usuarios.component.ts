@@ -7,7 +7,7 @@ import { PlantasService } from 'src/app/services/plantas.service';
 import { Plantas } from 'src/app/models/plantas';
 import { ReportesService } from 'src/app/services/reportes.service';
 import { Reporte } from 'src/app/models/reporte';
-
+import {Indentificador } from 'src/app/models/indentificador'
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { errorMessage, successDialog, timeMessage } from 'src/app/imagenes/functions/alerts';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -49,7 +49,7 @@ this.config.interval =1500;
       )
     this.reportesdelusuario.getreportes().subscribe(data=>this.reporte = data
       )
-   this.ws =Ws("ws://invernanderointeligente.herokuapp.com");
+   this.ws =Ws("wss://invernanderointeligente.herokuapp.com/adonis-ws");
    this.ws.connect()
    this.chat = this.ws.subscribe("chat")
    this.chat.on("message",(data:any)=>{
